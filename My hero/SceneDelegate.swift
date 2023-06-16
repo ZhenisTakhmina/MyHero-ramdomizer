@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  My hero
 //
-//  Created by Madik on 09.12.2022.
+//  Created by Takhmina on 09.12.2022.
 //
 
 import UIKit

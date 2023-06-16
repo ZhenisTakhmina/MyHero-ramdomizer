@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D602D3F96382071D30CA96A /* Pods_My_hero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC9F0AD596781DDF71C16D9 /* Pods_My_hero.framework */; };
 		A49535E929433A55003551A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49535E829433A55003551A1 /* AppDelegate.swift */; };
 		A49535EB29433A55003551A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49535EA29433A55003551A1 /* SceneDelegate.swift */; };
 		A49535ED29433A55003551A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49535EC29433A55003551A1 /* ViewController.swift */; };
 		A49535F029433A55003551A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49535EE29433A55003551A1 /* Main.storyboard */; };
 		A49535F229433A56003551A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49535F129433A56003551A1 /* Assets.xcassets */; };
 		A49535F529433A56003551A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49535F329433A56003551A1 /* LaunchScreen.storyboard */; };
+		A49535FD29433F8B003551A1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49535FC29433F8B003551A1 /* NetworkManager.swift */; };
+		A49535FF2943481B003551A1 /* MyHeroResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49535FE2943481B003551A1 /* MyHeroResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32BEA1FB0B38E749E5444F6D /* Pods-My hero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My hero.debug.xcconfig"; path = "Target Support Files/Pods-My hero/Pods-My hero.debug.xcconfig"; sourceTree = "<group>"; };
+		83AB709D893206C61680C171 /* Pods-My hero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My hero.release.xcconfig"; path = "Target Support Files/Pods-My hero/Pods-My hero.release.xcconfig"; sourceTree = "<group>"; };
 		A49535E529433A55003551A1 /* My hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49535E829433A55003551A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A49535EA29433A55003551A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		A49535F129433A56003551A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A49535F429433A56003551A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A49535F629433A56003551A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A49535FC29433F8B003551A1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A49535FE2943481B003551A1 /* MyHeroResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHeroResponseModel.swift; sourceTree = "<group>"; };
+		BDC9F0AD596781DDF71C16D9 /* Pods_My_hero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_hero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D602D3F96382071D30CA96A /* Pods_My_hero.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				A49535E729433A55003551A1 /* My hero */,
 				A49535E629433A55003551A1 /* Products */,
+				DE147F68E6820CE707AD249C /* Pods */,
+				C520EAF601864A5272C85300 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,27 @@
 				A49535F129433A56003551A1 /* Assets.xcassets */,
 				A49535F329433A56003551A1 /* LaunchScreen.storyboard */,
 				A49535F629433A56003551A1 /* Info.plist */,
+				A49535FC29433F8B003551A1 /* NetworkManager.swift */,
+				A49535FE2943481B003551A1 /* MyHeroResponseModel.swift */,
 			);
 			path = "My hero";
+			sourceTree = "<group>";
+		};
+		C520EAF601864A5272C85300 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDC9F0AD596781DDF71C16D9 /* Pods_My_hero.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE147F68E6820CE707AD249C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32BEA1FB0B38E749E5444F6D /* Pods-My hero.debug.xcconfig */,
+				83AB709D893206C61680C171 /* Pods-My hero.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A49535F929433A56003551A1 /* Build configuration list for PBXNativeTarget "My hero" */;
 			buildPhases = (
+				50CE27E0E3FA9F6F50E42363 /* [CP] Check Pods Manifest.lock */,
 				A49535E129433A55003551A1 /* Sources */,
 				A49535E229433A55003551A1 /* Frameworks */,
 				A49535E329433A55003551A1 /* Resources */,
+				9D4CFB084A41750AF6BB7ACA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +165,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		50CE27E0E3FA9F6F50E42363 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My hero-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D4CFB084A41750AF6BB7ACA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My hero/Pods-My hero-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My hero/Pods-My hero-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-My hero/Pods-My hero-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A49535E129433A55003551A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A49535FF2943481B003551A1 /* MyHeroResponseModel.swift in Sources */,
+				A49535FD29433F8B003551A1 /* NetworkManager.swift in Sources */,
 				A49535ED29433A55003551A1 /* ViewController.swift in Sources */,
 				A49535E929433A55003551A1 /* AppDelegate.swift in Sources */,
 				A49535EB29433A55003551A1 /* SceneDelegate.swift in Sources */,
@@ -282,6 +358,7 @@
 		};
 		A49535FA29433A56003551A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32BEA1FB0B38E749E5444F6D /* Pods-My hero.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +386,7 @@
 		};
 		A49535FB29433A56003551A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83AB709D893206C61680C171 /* Pods-My hero.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

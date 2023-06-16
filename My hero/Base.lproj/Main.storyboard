@@ -1,24 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overFullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="My_hero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paintpalette" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kgX-BC-v2m">
+                                <rect key="frame" x="20" y="68.000000000000014" width="350" height="248.33333333333331"/>
+                                <color key="tintColor" red="0.19607841970000001" green="0.3686274886" blue="0.4588235021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="szL-pA-kXi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRB-Cx-UQ1">
+                                <rect key="frame" x="20" y="337" width="350" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="30"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWb-ez-jG4">
+                                <rect key="frame" x="20" y="760" width="350" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wa5-Vs-yT4"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get My Hero"/>
+                                <connections>
+                                    <action selector="ButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2GL-ph-Maq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appearance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTy-NQ-vgY">
+                                <rect key="frame" x="20" y="396" width="350" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="0.19607841970000001" green="0.3686274886" blue="0.4588235021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MT-lh-GXX">
+                                <rect key="frame" x="20" y="442" width="350" height="22.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powerstates:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SC9-wy-iKM">
+                                <rect key="frame" x="20" y="484.33333333333331" width="350" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="0.19607841970000001" green="0.3686274886" blue="0.4588235021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulo-Qd-hTd">
+                                <rect key="frame" x="20" y="530.33333333333337" width="350" height="22.333333333333371"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SC9-wy-iKM" firstAttribute="top" secondItem="6MT-lh-GXX" secondAttribute="bottom" constant="20" id="2Xm-O4-ot1"/>
+                            <constraint firstItem="mWb-ez-jG4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BR8-Jn-hKl"/>
+                            <constraint firstItem="kgX-BC-v2m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="E5C-QR-Ud8"/>
+                            <constraint firstItem="nRB-Cx-UQ1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IgA-fJ-kQB"/>
+                            <constraint firstItem="SC9-wy-iKM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="K3F-hj-3e4"/>
+                            <constraint firstItem="ulo-Qd-hTd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ME6-jD-5Tg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ulo-Qd-hTd" secondAttribute="trailing" constant="20" id="MQi-SN-Gbo"/>
+                            <constraint firstItem="kgX-BC-v2m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MQq-VH-Qy4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kgX-BC-v2m" secondAttribute="trailing" constant="20" id="Nt9-l9-BzH"/>
+                            <constraint firstItem="ulo-Qd-hTd" firstAttribute="top" secondItem="SC9-wy-iKM" secondAttribute="bottom" constant="20" id="Q9T-qL-AE0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mWb-ez-jG4" secondAttribute="trailing" constant="20" id="Qrc-8A-NxI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6MT-lh-GXX" secondAttribute="trailing" constant="20" id="QyW-bH-fch"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MTy-NQ-vgY" secondAttribute="trailing" constant="20" id="VpJ-b9-5OC"/>
+                            <constraint firstItem="MTy-NQ-vgY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YyT-ch-ein"/>
+                            <constraint firstItem="6MT-lh-GXX" firstAttribute="top" secondItem="MTy-NQ-vgY" secondAttribute="bottom" constant="20" id="bMZ-K1-PqA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mWb-ez-jG4" secondAttribute="bottom" id="dtP-ac-RqE"/>
+                            <constraint firstItem="MTy-NQ-vgY" firstAttribute="top" secondItem="nRB-Cx-UQ1" secondAttribute="bottom" constant="20" id="e9n-CF-X7B"/>
+                            <constraint firstItem="nRB-Cx-UQ1" firstAttribute="top" secondItem="kgX-BC-v2m" secondAttribute="bottom" constant="20" id="gs3-FC-99A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SC9-wy-iKM" secondAttribute="trailing" constant="20" id="pjk-un-aKi"/>
+                            <constraint firstItem="6MT-lh-GXX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uVA-87-O8F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nRB-Cx-UQ1" secondAttribute="trailing" constant="20" id="ynt-oH-vrz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heroAppearance" destination="6MT-lh-GXX" id="P3l-hp-G9c"/>
+                        <outlet property="heroImage" destination="kgX-BC-v2m" id="5AK-Zm-2tz"/>
+                        <outlet property="heroLabel" destination="nRB-Cx-UQ1" id="j7C-Ig-M8z"/>
+                        <outlet property="heroSkills" destination="ulo-Qd-hTd" id="SJh-Y8-fhA"/>
+                        <outlet property="text1" destination="MTy-NQ-vgY" id="swY-XG-p5t"/>
+                        <outlet property="text2" destination="SC9-wy-iKM" id="LCT-me-9R0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="paintpalette" catalog="system" width="128" height="105"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
